@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О себе - Предприниматель</title>
+    <style>
+        body {
+            font-family: Times New Roman;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background: #fff;
+            color: #000000;
+        }
+        header {
+            background: #f97316;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        section {
+            background: #fef3c7;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        aside {
+            background: #ffedd5;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        footer {
+            border-top: 2px solid #f97316;
+            padding: 15px 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 12px 0;
+            border: 1px solid #f97316;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #f97316;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        img {
+            border-radius: 50%;
+            border: 3px solid #f97316;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header>
+        <h1>Шурина Елизавета</h1>
+        <p>Стартапер · Создаю полезные сервисы</p>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main>
+        <!-- Секция 1: Навыки -->
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Маркетинг и продвижение</li>
+                <li>Управление проектами</li>
+                <li>Финансовое планирование</li>
+                <li>Дизайн-мышление</li>
+            </ul>
+        </section>
+
+        <!-- Секция 2: Проекты  -->
+        <section>
+            <h2>Проекты</h2>
+            <ol>
+                <li>«EcoBag» — экосумки с дизайном от локальных художников</li>
+                <li>«MamaTime» — сервис подписки на детские развивающие наборы</li>
+                <li>«PlantMe» — умный горшок для растений с напоминаниями</li>
+                <li>«BookSwap» — платформа для обмена книгами между соседями</li>
+            </ol>
+        </section>
+
+        <!-- АВАТАР -->
+        <img
+            src="images/photo1.png"
+            alt="Фото Елизаветы"
+            width="160"
+            height="175"
+        >
+
+        <!-- БОКОВАЯ ПАНЕЛЬ (aside) -->
+        <aside>
+            <h3>Моя ценность</h3>
+            <ul>
+                <li>Клиентоориентированность</li>
+                <li>Работа с данными</li>
+                <li>Быстрый запуск идей</li>
+            </ul>
+        </aside>
+
+        <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+        <section style="background: #fff; border: 2px solid #f97316;">
+            <h2>Напишите мне</h2>
+            <form>
+                <label>Имя:</label>
+                <input type="text" name="name" placeholder="Ваше имя">
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="your@email.com">
+
+                <label>Сообщение:</label>
+                <textarea name="message" placeholder="Ваше сообщение..." rows="4"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© 2026 Шурина Елизавета</p>
+    </footer>
+</body>
+</html>
