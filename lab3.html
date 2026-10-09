@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе - Предприниматель</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--primary);
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: var(--primary-light);
+            border-bottom-style: solid;
+        }
+        footer a:visited {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Шурина Елизавета</h1>
+        <p>Стартапер · Создаю полезные сервисы</p>
+        <span class="badge">Топ-предприниматель</span>
+
+        <!-- FLEXBOX:Адаптивное навигационное меню-->
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="#ideas">Идеи стартапов</a></li>
+                <li><a href="#metrics">Метрики</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- FLEXBOX:Карточки стартапов-->
+        <section id="ideas" class="section">
+            <h2>Идеи стартапов</h2>
+            <div class="ideas-flex">
+                <article class="idea-card">
+                    <h3>EcoBag</h3>
+                    <p><strong>Проблема:</strong> Избыток одноразовых пакетов.</p>
+                    <p><strong>Решение:</strong> Покупка стильной экосумки.</p>
+                </article>
+                <article class="idea-card">
+                    <h3>MamaTime</h3>
+                    <p><strong>Проблема:</strong> Выгорание у молодых мам.</p>
+                    <p><strong>Решение:</strong> Развивающие наборы для детей.</p>
+                </article>
+                <article class="idea-card">
+                    <h3>PlantMe</h3>
+                    <p><strong>Проблема:</strong> Забывчивость при поливе.</p>
+                    <p><strong>Решение:</strong> Умный IoT горшочек для растений.</p>
+                </article>
+                <article class="idea-card">
+                    <h3>BookSwap</h3>
+                    <p><strong>Проблема:</strong> Дорогие книги пылятся дома на полках.</p>
+                    <p><strong>Решение:</strong> Локальная P2P сеть обмена.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- GRID:Дашборд с метриками-->
+        <section id="metrics" class="section">
+            <h2>Ключевые метрики</h2>
+            <div class="metrics-grid">
+
+                <div class="metric-block">
+                    <h3>MAU</h3>
+                    <p class="metric-value">12,500</p>
+                    <meter class="metric-meter" min="0" max="20000" value="12500" title="12500 пользователей"></meter>
+                    <p class="metric-desc">Активные пользователи в месяц</p>
+                </div>
+
+                <div class="metric-block">
+                    <h3>LTV</h3>
+                    <p class="metric-value">$450</p>
+                    <meter class="metric-meter" min="0" max="1000" value="450" title="$450"></meter>
+                    <p class="metric-desc">Жизненная ценность клиента</p>
+                </div>
+
+                <div class="metric-block">
+                    <h3>CAC</h3>
+                    <p class="metric-value">$35</p>
+                    <meter class="metric-meter" min="0" max="100" value="35" title="$35"></meter>
+                    <p class="metric-desc">Стоимость привлечения</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section form-section">
+            <h2>Напишите мне</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" placeholder="Ваше сообщение..." rows="4"></textarea>
+
+                <button type="submit" class="btn-submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2026 Шурина Елизавета |
+            <a href="#">Политика конфиденциальности</a> |
+            <a href="#">Контакты</a>
+        </p>
+    </footer>
+
+</body>
+</html>
